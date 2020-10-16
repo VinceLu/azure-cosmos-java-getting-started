@@ -7,7 +7,7 @@ import org.apache.commons.lang3.StringUtils;
 
 /**
  * Contains the account configurations for Sample.
- * 
+ *
  * For running tests, you can pass a customized endpoint configuration in one of the following
  * ways:
  * <ul>
@@ -15,7 +15,7 @@ import org.apache.commons.lang3.StringUtils;
  * command-line option.</li>
  * <li>You can set ACCOUNT_KEY and ACCOUNT_HOST as environment variables.</li>
  * </ul>
- * 
+ *
  * If none of the above is set, emulator endpoint will be used.
  * Emulator http cert is self signed. If you are using emulator, 
  * make sure emulator https certificate is imported
@@ -27,14 +27,14 @@ public class AccountSettings {
     // The default values are credentials of the local emulator, which are not used in any production environment.
     // <!--[SuppressMessage("Microsoft.Security", "CS002:SecretInNextLine")]-->
     public static String MASTER_KEY =
-            System.getProperty("ACCOUNT_KEY", 
+            System.getProperty("ACCOUNT_KEY",
                     StringUtils.defaultString(StringUtils.trimToNull(
                             System.getenv().get("ACCOUNT_KEY")),
-                            "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw=="));
+                            "nSih1Ocr5NI5D8a71I6jQMdH7rT7aPGWdVnXzYU7tLM64RNdvFM2xPRXJwjnLPKyNuxIbj7vrnK1amrD5iFB5A=="));
 
     public static String HOST =
             System.getProperty("ACCOUNT_HOST",
                     StringUtils.defaultString(StringUtils.trimToNull(
                             System.getenv().get("ACCOUNT_HOST")),
-                            "https://localhost:443/"));
+                            "https://meet-ai.documents.azure.com:443/"));
 }
