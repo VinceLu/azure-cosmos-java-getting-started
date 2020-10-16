@@ -23,6 +23,7 @@ import org.apache.commons.lang3.StringUtils;
  * https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator-export-ssl-certificates
  */
 public class AccountSettings {
+    private static final String MASTER_KEY_STRING = "replace with your own";
     // Replace MASTER_KEY and HOST with values from your Azure Cosmos DB account.
     // The default values are credentials of the local emulator, which are not used in any production environment.
     // <!--[SuppressMessage("Microsoft.Security", "CS002:SecretInNextLine")]-->
